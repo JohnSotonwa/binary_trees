@@ -1,2 +1,2 @@
 Binary Trees
-By -- John and Benedicta 
+By -- John and Benedicta
