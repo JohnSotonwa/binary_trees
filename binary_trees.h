@@ -2,8 +2,13 @@
 #define _BINARY_TREES_H_
 
 #include <stddef.h>
+<<<<<<< HEAD
 #include <stdio.h>
 #include <stdlib.h>
+=======
+#include <stdlib.h>
+#include <stdio.h>
+>>>>>>> 70b3c44cf72265e47eec719b533ec92b43e36482
 
 /**
  * struct binary_tree_s - Binary tree node
@@ -20,11 +25,18 @@ struct binary_tree_s
 	struct binary_tree_s *left;
 	struct binary_tree_s *right;
 };
+<<<<<<< HEAD
 typedef struct binary_tree_s binary_tree_t;
+=======
+>>>>>>> 70b3c44cf72265e47eec719b533ec92b43e36482
 
+typedef struct binary_tree_s binary_tree_t;
 void binary_tree_print(const binary_tree_t *);
 
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
+<<<<<<< HEAD
 binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value);
+=======
+>>>>>>> 70b3c44cf72265e47eec719b533ec92b43e36482
 
 #endif /* _BINARY_TREES_H_ */
