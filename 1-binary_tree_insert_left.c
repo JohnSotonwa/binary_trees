@@ -8,23 +8,16 @@
  *
  * Return: a pointer to the new node, or NULL on failure
  */
+
 binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value)
 {
-	binary_tree_t *node = NULL;
-
-	if (parent)
-	{
-		node = binary_tree_node(parent, value);
-		if (node)
-		{
-			if (parent->left)
-			{
-				node->left = parent->left;
-				parent->left->parent = node;
-			}
-			parent->left = node;
-		}
-	}
-
-	return (node);
+    binary_tree_t *ptr = NULL;
+    ptr = malloc(sizeof(binary_tree_t));
+    ptr = binary_tree_node(parent, value);
+    if (parent->left)
+    {
+        ptr->left = parent->left;
+    }
+    parent->left = ptr;
+    return(ptr);
 }
